@@ -1,0 +1,396 @@
+/* common css for both */
+/* table css start here */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* maon section */
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* header ....................style */
+.header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 5%;
+}
+
+.logoprofileheader {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.header-left {
+    display: flex;
+    margin-left: -13em;
+
+}
+
+.header-right {
+    margin-left: 10em;
+}
+
+
+
+/* main section */
+.main-section {
+    background-color: rgb(220, 223, 225);
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 95%;
+    height: 90%;
+    margin: 20px;
+    align-items: center;
+
+}
+
+
+
+
+/* responsive here  */
+
+@media (max-width:800px) {
+    .main-section {
+        padding: 20px 30px;
+    }
+
+    .header-right {
+        margin-left: 50px;
+    }
+
+   
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+
+}
+
+@media (max-width:605px) {
+    .main-section {
+        padding: 20px 10px;
+    }
+
+    .header-right {
+        margin-left: 20px;
+    }
+
+    .header-left {
+        margin-left: 0px;
+    }
+
+    .header {
+        margin-left: 10px;
+    }
+
+   
+
+    .header-right h2 {
+        font-size: 15px;
+
+    }
+
+    
+
+}
+
+@media (max-width:440px) {
+
+
+    .main-section {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+  
+
+
+    .header-right {
+        margin-left: 10px;
+        margin-top: 0;
+
+    }
+
+ 
+
+
+    .header-right h2 {
+        font-size: 15px;
+
+    }
+
+   
+
+}
+
+@media (max-width:900px) {
+
+    .header-left {
+        margin: 0px;
+    }
+
+    .main-section {
+        height: 100%;
+    }
+
+    table {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+}
+
+
+
+/* styling here employee form */
+
+.img-profile {
+    width: 25px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+/* serach input stylee */
+
+
+.form {
+    display: flex;
+
+    background-color: white;
+   flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    /* Centers vertically in the container */
+    align-items: center;
+    /* Centers horizontally in the container */
+    width: 70%;
+    height: 100%;
+    margin: 10px;
+
+
+
+}
+
+#myform {
+    width: 70%;
+
+}
+
+
+.formContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.formvalueDiv {
+    display: flex;
+    width: 100%;
+}
+
+
+.labelclass {
+    display: flex;
+    justify-content: flex-start;
+
+    width: 30%;
+
+}
+
+#nameInput {
+    width: 100%;
+    height: 30px;
+}
+
+.defaultimgdiv {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.profileContent1 {
+    display: flex;
+}
+
+.maleFemale {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkjob {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.salarydiv {
+    width: 40%;
+}
+
+.selectIncome {
+    width: 100%;
+    padding: 10px;
+}
+
+
+.fulldate {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.yeardiv,
+.monthdiv,
+.datedivValue {
+    width: 100%;
+}
+
+#day,
+#months,
+#year {
+    width: 90%;
+    padding: 10px;
+}
+
+.btn1 {
+    width: 30%;
+
+}
+
+.btnClass {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+.btn2 {
+    width: 55%;
+    justify-content: end;
+}
+
+textarea {
+    width: 100%;
+
+}
+
+#subBtn {
+    margin-right: 15px;
+}
+#updatebtn{
+    margin-left: 15px;
+}
+
+
+.btn1 button,
+.btn2 button {
+    padding: 5px 20px;
+}
+
+
+
+@media (max-width:500px) {
+    .form {
+        width: 100% !important;
+        padding: 0px !important;
+        margin: 0 !important;
+
+    } 
+
+    #myform {
+
+        width: 80%;
+    }
+
+    .main-section {
+        margin: 10px 0px;
+    }
+
+  .formContent{
+    width: 100%;
+
+  }
+  .formvalueDiv{
+    width: 100%;
+  }
+
+}
+
+@media (max-width:440px) {
+    .main {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .form {
+        width: 100% !important;
+        padding: 0px !important;
+        margin: 0 !important;
+
+    }
+
+    #myform {
+        width: 100%;
+    }
+
+    .main-section {
+        margin: 10px 0px;
+        width: 100%;
+
+    }
+
+
+
+}
+
+
+
+@media (max-width:800px) {
+    .main-section {
+        width: 100%;
+
+    }
+
+    .form {
+        width: 90% !important;
+        padding: 0px !important;
+        margin: 0 !important;
+        height: 90%;
+    }
+
+    #myform {
+        height: 90%;
+        width: 80%;
+    }
+}
+
+button:hover{
+    cursor: pointer;
+}

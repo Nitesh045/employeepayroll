@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/1d2b90fefa.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="header-left">
+                <div class="logoprofileheader" style="display: flex;">
+                    <p class="employeelogo"><i
+                            style="color: aquamarine; border: solid 1px black; padding: 3px; font-size: 30px;"
+                            class="fa-regular fa-user"></i>
+                    </p>
+                    <p style="margin-left: 3px; " class="pspam">
+                        <spam style="color: rgb(100, 183, 17);"><b>EMPLOYEE</b></spam> <br>
+                        <b>PAYROLL</b>
+                    </p>
+
+                </div>
+            </div>
+            <div class="header-right">
+                <h2 style="color: blue;">
+                    <u> Add Employee Payroll UI/UX Design</u>
+                </h2>
+            </div>
+        </div>
+        <div class="main-section">
+            <div class="form">
+                <form id="myform"   method="post">
+                    <div class="formcontentUpper">
+                        <h3>Employee Payroll Form</h3>
+                    </div>
+                    
+                    <div class="formContent">
+                        <div class="labelclass">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="formvalueDiv">
+                            <input id="nameInput" type="text" name="name" />
+                        </div>
+
+                    </div>
+                    <p style="display: none; color: red; text-align: center;" id="pname">Please enter name</p>
+                    
+                    
+                    <!-- profile input radio -->
+                    <div class="formContent">
+                        <div class="labelclass">
+                            <label for="profileImage">Profile Image</label>
+                        </div>
+                        <div class="formvalueDiv ">
+
+                            <div class="defaultimgdiv">
+                                <div class="profileContent1">
+                                    <input id="femeleProfile" type="radio"
+                                        value="https://tse1.explicit.bing.net/th?id=OIP.E-y_Jdvv282ZefgY-FPupwAAAA&pid=Api&P=0&h=220"
+                                        name="pro">
+                                    </input>
+                                    <img class="img-profile"
+                                        src="https://tse1.explicit.bing.net/th?id=OIP.E-y_Jdvv282ZefgY-FPupwAAAA&pid=Api&P=0&h=220"
+                                        alt="femele image" />
+                                </div>
+                                <div class="profileContent1">
+
+                                    <input id="maleProfile" type="radio"
+                                        value="https://tse1.explicit.bing.net/th?id=OIP.E-y_Jdvv282ZefgY-FPupwAAAA&pid=Api&P=0&h=220"
+                                        name="pro"></input>
+                                    <img class="img-profile"
+                                        src="https://tse2.mm.bing.net/th?id=OIP.28jmE4s4hgzuaJnqvGffRQHaHa&pid=Api&P=0&h=220" />
+                                </div>
+                                <div class="profileContent1">
+                                    <input id="Profile3" type="radio"
+                                        value="https://tse4.mm.bing.net/th?id=OIP.loCH1-XweQIMyANwy_wQZQHaHa&pid=Api&P=0&h=220"
+                                        name="pro">
+                                    </input>
+                                    <img class="img-profile"
+                                        src="https://tse4.mm.bing.net/th?id=OIP.loCH1-XweQIMyANwy_wQZQHaHa&pid=Api&P=0&h=220" />
+
+                                </div>
+                                <div class="profileContent1">
+                                    <input id="Profile4" type="radio"
+                                        value=" https://media.istockphoto.com/vectors/businessman-profile-icon-male-portrait-flat-vector-id530838817?k=20&m=530838817&s=170667a&w=0&h=uv1NsUb1a5aC3C8FK14TSxLvEyA77rZJVwdlQh66JQU="
+                                        name="pro">
+                                    <img class="img-profile"
+                                        src="https://media.istockphoto.com/vectors/businessman-profile-icon-male-portrait-flat-vector-id530838817?k=20&m=530838817&s=170667a&w=0&h=uv1NsUb1a5aC3C8FK14TSxLvEyA77rZJVwdlQh66JQU=" />
+                                    </input>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="display: none; color: red; text-align: center;" id="pimg">Please choose profile image</p>
+                    
+                
+                    <!-- gender input ..............................gender input -->
+                    <div class="formContent">
+                        <div class="labelclass">
+                            <label for="Gender">Gender</label>
+                        </div>
+                        <div class="formvalueDiv">
+                            <div class="maleFemale">
+                                <input id="male" type="radio" name="gender" value="Male" class="gender">Male</input>
+                                <input id="female" type="radio" name="gender" value="Female"
+                                    class="gender"><span>Female</span></input>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p style="display: none; color: red; text-align: center;" id="pgender">Please choose gender</p>
+                   
+                    <div class="formContent">
+                        <div class="labelclass">
+                            <label for="Department">Department</label>
+                        </div>
+
+                        <div class="formvalueDiv">
+                            <div class="checkjob">
+                                <input class="checkbox" id="check1" type="checkbox" value="Hr">Hr</input>
+                                <input class="checkbox" id="check2" type="checkbox" value="Sales">Sale</input>
+                                <input class="checkbox" id="check3" type="checkbox" value="Engineer">Engineer</input>
+                                <input class="checkbox" id="check4" type="checkbox" value="Finance">Finance</input>
+                                <input class="checkbox" id="check5" type="checkbox" value="others">Others</input>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="display: none; color: red; text-align: center;" id="pjob">Please select degiganation</p>
+                    
+                    <div class="formContent">
+                        <div class="labelclass">
+                            <label for="salary">Salary</label>
+                        </div>
+                        <div class="formvalueDiv">
+                            <div class="salarydiv">
+                                <select class="selectIncome" id="income">
+                                    <option id="option" value="0">Select Salary</option>
+                                    <option id="option1" value="10,000">10,000</option>
+                                    <option id="option2" value="20,000">20,000</option>
+                                    <option id="option3" value="30,000">30,000</option>
+                                    <option id="option4" value="40,000">40,000</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="display: none; color: red; text-align: center;" id="pslary">Please select salary</p>
+                   
+                    <div class="formContent">
+                        <div class="labelclass">
+                            <label for="start date">Start Date</label>
+                        </div>
+
+                        <div class="formvalueDiv">
+                            <div class="fulldate">
+                                <div class="datedivValue">
+                                    <select id="day" size="1">
+                                        <option value="0">Days</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+    
+                                    </select>
+                                </div>
+    
+                                <div class="monthdiv">
+                                    <select id="months">
+                                        <option value="0">Month</option>
+                                        <option value="Jan">Jan</option>
+                                        <option value="Feb">Feb</option>
+                                        <option value="Mar">Mar</option>
+                                        <option value="Apr">Apr</option>
+                                        <option value="May">May</option>
+                                        <option value="Jun">Jun</option>
+                                        <option value="Jul">Jul</option>
+                                        <option value="Aug">Aug</option>
+                                        <option value="Sep">Sep</option>
+                                        <option value="Oct">Oct</option>
+                                        <option value="Nov">Dov</option>
+                                        <option value="Dec">Dec</option>
+                                    </select>
+                                </div>
+    
+                                <div class="yeardiv">
+                                    <select id="year">
+                                        <option value="0">Year</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                    </select>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                    <p style="display: none; color: red; text-align: center;" id="pyear">Please select join date</p>
+                    
+                    <div class="formContent">
+                        <div class="labelclass">
+                            <label for="notes">Notes</label>
+                        </div>
+                        <div class="formvalueDiv">
+                            <textarea name="message " rows="5" id="textArea"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="formContent">
+                        <div class="btnClass">
+                            <div class="btn1">
+                                <button type="button" id="canclebtn">Cancle</button>
+                            </div>
+                            <div class="btn2" style="display: flex;">
+                                <button type="submit" id="subBtn" value="Submiter">Submit</button>
+                                <button type="reset" id="resBtn" value="resetvalue">Reset</button>
+                                <button type="submit" style="display: none;" id="updatebtn" value="Updater">Update</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="../js/script.js"></script> -->
+    <script src="../js/formhandlerJQ.js"></script>
+    <!-- <script src="../js/select.js"></script> -->
+</body>
+
+</html>

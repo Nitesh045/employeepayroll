@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1d2b90fefa.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./css/table.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="header-left">
+                <div class="logoprofileheader">
+                    <p class="employeelogo"><i
+                            style="color: aquamarine; border: solid 1px black; padding: 3px; font-size: 30px;"
+                            class="fa-regular fa-user"></i>
+                    </p>
+                    <p style="margin-left: 3px; " class="pspam">
+                        <spam style="color: rgb(100, 183, 17);"><b>EMPLOYEE</b></spam> <br>
+                        <b>PAYROLL</b>
+                    </p>
+
+                </div>
+            </div>
+            <div class="header-right">
+                <h2 style="color: blue;">
+                    <u>Employee Payroll UI/UX Design</u>
+                </h2>
+            </div>
+        </div>
+        <div class="main-section">
+            <div class="searchCreate">
+                <div class="left-section">
+                    <p><b>Employee Details</b></p>
+                </div>
+                <div class="right-section">
+                    <p>  
+                        <input id="serachInput" type="text" placeholder="Enter Name for Search"/>
+                        <i id="searchbarlogo" class="fa-solid fa-magnifying-glass"
+                            style="padding: 10px; color: black; background-color: white; border-radius: 50%;"></i>
+                        <a href="./html/addemployee.html" target="_blank"> <button class="btn-addUser" id="btn-addUser"><i
+                                    class="fa-solid fa-plus"></i><span>Add User</span></button></a>
+                    </p>
+                </div>
+            </div>
+            <div class="table" id="tab">
+                <table>
+
+                    <tr class="trhead" style="background-color: rgb(22, 22, 57); color: white; ">
+                        <th></th>
+                        <th>NAME</th>
+                        <th>GENDER</th>
+                        <th>DEPARTMENT</th>
+                        <th>SALARY</th>
+                        <th>START DATE</th>
+                        <th>ACTION</th>
+                    </tr>
+                    <tbody id="uldiv">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./js/indexJquery.js"></script>
+    <!-- <script src="../js/index.js"></script> -->
+
+</body>
+
+</html>
